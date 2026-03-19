@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil de Usuario | Aplicación Web</title>
+    <meta
+      name="description"
+      content="Aplicación web de perfil de usuario con estadísticas, biografía, habilidades y actividad reciente."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero-card card">
+        <div class="hero-content">
+          <span class="eyebrow">Aplicación web de perfil</span>
+          <h1 id="profile-name">María Fernanda López</h1>
+          <p id="profile-role" class="hero-role">Diseñadora de producto & estratega digital</p>
+          <p id="profile-bio" class="hero-bio">
+            Me especializo en crear experiencias intuitivas, accesibles y medibles para productos
+            web y móviles. Trabajo conectando diseño, negocio y tecnología.
+          </p>
+
+          <div class="hero-actions">
+            <button id="edit-profile" class="btn btn-primary">Editar perfil</button>
+            <button id="reset-profile" class="btn btn-secondary">Restablecer demo</button>
+          </div>
+        </div>
+
+        <aside class="profile-summary">
+          <div class="avatar" aria-hidden="true">MF</div>
+          <ul class="summary-list">
+            <li>
+              <span class="label">Ubicación</span>
+              <strong id="profile-location">Bogotá, Colombia</strong>
+            </li>
+            <li>
+              <span class="label">Disponibilidad</span>
+              <strong>Abierta a proyectos</strong>
+            </li>
+            <li>
+              <span class="label">Especialidad</span>
+              <strong>UX/UI + Research</strong>
+            </li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="stats-grid">
+        <article class="card stat-card accent-purple">
+          <span class="stat-label">Proyectos liderados</span>
+          <strong class="stat-value">48</strong>
+          <p>Productos lanzados con foco en usabilidad, conversión y escalabilidad.</p>
+        </article>
+        <article class="card stat-card accent-cyan">
+          <span class="stat-label">Años de experiencia</span>
+          <strong class="stat-value">9+</strong>
+          <p>Experiencia colaborando con equipos de diseño, marketing e ingeniería.</p>
+        </article>
+        <article class="card stat-card accent-amber">
+          <span class="stat-label">Satisfacción de clientes</span>
+          <strong class="stat-value">97%</strong>
+          <p>Basado en encuestas posteriores a implementaciones y auditorías UX.</p>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="card info-card">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Sobre mí</span>
+              <h2>Resumen profesional</h2>
+            </div>
+          </div>
+          <p>
+            Combino investigación de usuarios, diseño de interfaces y toma de decisiones basada
+            en datos para construir productos claros, confiables y alineados con objetivos de
+            negocio.
+          </p>
+          <div class="tag-list">
+            <span>Design Systems</span>
+            <span>Discovery</span>
+            <span>Prototipado</span>
+            <span>Analytics</span>
+            <span>Accesibilidad</span>
+          </div>
+        </article>
+
+        <article class="card info-card">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Fortalezas</span>
+              <h2>Habilidades destacadas</h2>
+            </div>
+          </div>
+
+          <div class="skill-list">
+            <div>
+              <div class="skill-header">
+                <span>UX Research</span>
+                <strong>92%</strong>
+              </div>
+              <div class="progress"><span style="width: 92%"></span></div>
+            </div>
+            <div>
+              <div class="skill-header">
+                <span>UI Design</span>
+                <strong>95%</strong>
+              </div>
+              <div class="progress"><span style="width: 95%"></span></div>
+            </div>
+            <div>
+              <div class="skill-header">
+                <span>Product Strategy</span>
+                <strong>88%</strong>
+              </div>
+              <div class="progress"><span style="width: 88%"></span></div>
+            </div>
+            <div>
+              <div class="skill-header">
+                <span>Frontend Collaboration</span>
+                <strong>84%</strong>
+              </div>
+              <div class="progress"><span style="width: 84%"></span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card info-card timeline-card">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Trayectoria</span>
+              <h2>Actividad reciente</h2>
+            </div>
+          </div>
+          <ul class="timeline">
+            <li>
+              <strong>Rediseño de onboarding</strong>
+              <p>Incrementó la activación inicial en un 23% durante el primer trimestre.</p>
+            </li>
+            <li>
+              <strong>Auditoría de accesibilidad</strong>
+              <p>Se priorizaron mejoras AA para optimizar la experiencia móvil.</p>
+            </li>
+            <li>
+              <strong>Sistema de componentes</strong>
+              <p>Redujo tiempos de diseño e implementación entre producto y desarrollo.</p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card info-card contact-card">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Contacto</span>
+              <h2>Canales y disponibilidad</h2>
+            </div>
+          </div>
+          <div class="contact-list">
+            <a href="mailto:maria@perfilweb.dev">maria@perfilweb.dev</a>
+            <a href="tel:+573001234567">+57 300 123 4567</a>
+            <a href="#">linkedin.com/in/mariafernanda</a>
+          </div>
+          <div class="availability-box">
+            <span class="status-dot"></span>
+            Disponible para consultoría, mentoría y liderazgo de producto.
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <dialog id="profile-dialog" class="dialog">
+      <form id="profile-form" class="dialog-content" method="dialog">
+        <div class="dialog-header">
+          <div>
+            <span class="eyebrow">Personalización</span>
+            <h2>Editar perfil</h2>
+          </div>
+          <button class="icon-btn" value="cancel" aria-label="Cerrar">×</button>
+        </div>
+
+        <label>
+          Nombre
+          <input name="name" type="text" maxlength="50" required />
+        </label>
+        <label>
+          Rol profesional
+          <input name="role" type="text" maxlength="80" required />
+        </label>
+        <label>
+          Biografía
+          <textarea name="bio" rows="4" maxlength="220" required></textarea>
+        </label>
+        <label>
+          Ubicación
+          <input name="location" type="text" maxlength="60" required />
+        </label>
+
+        <div class="dialog-actions">
+          <button type="button" id="cancel-dialog" class="btn btn-secondary">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
